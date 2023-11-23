@@ -68,7 +68,7 @@ img{
 }
 
 /*MAIN*/
-/*BLOCCO DELLA BUSINESS PLAN*/
+/*SEZIONE DELLA BUSINESS PLAN*/
 .business-plan{
     display: flex;
     flex-wrap: wrap;
@@ -91,7 +91,7 @@ img{
     flex-basis: 100%;
 }
 
-/*BLOCCO FOUND PARTNER*/
+/*SEZIONE FOUND PARTNER*/
 .found-partner{
     display: flex;
     margin: 0 -10px;
@@ -105,10 +105,25 @@ img{
     padding: 10px;
 }
 
-/*BLOCCO BUSINESS OPERATION*/
+/*SEZIONE BUSINESS OPERATION*/
 .business-operation{
     display: flex;
     flex-wrap: wrap;
     margin: 0 -10px;
+}
+
+/*SEZIONE LOGHI AZIENDE*/
+.companies-logos{
+    display: flex;
+}
+.big-box{
+    flex-basis: calc(100% / 3);
+    height: calc(100vw / 3);
+    display: flex;
+    flex-wrap: wrap;
+}
+.company-logo-box{
+    flex-basis: 50%;
+    padding: 50px;
 }
 /*FOOTER*/
