@@ -80,13 +80,14 @@ img{
 }
 .col{
     flex-basis: calc(100% / 3);
-    height: 300px;
+    
     padding: 10px;    
 }
 .card{
     height: 100%;
 }
-.business-plan .col:last-child{
+/*.business-plan, .business-operation*/ 
+.col:last-child{
     flex-basis: 100%;
 }
 
@@ -102,5 +103,12 @@ img{
 .f-partner-text{
     flex-basis: 40%;
     padding: 10px;
+}
+
+/*BLOCCO BUSINESS OPERATION*/
+.business-operation{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
 }
 /*FOOTER*/
