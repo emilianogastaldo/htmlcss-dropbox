@@ -140,12 +140,30 @@ img{
 }
 
 /*SEZIONE F.A.Q.*/
+.faq{
+    padding: 30px 0;
+}
 .faq h2{
     margin: 30px 0;
+    border-bottom: 1px solid gray;
 }
 .faq p{
     padding: 20px 0;
     border-bottom: 1px solid gray;
-    border-top: 1px solid gray;
+    
 }
+
 /*FOOTER*/
+footer{
+    background-color: black;
+    color: #fff;
+    border-bottom: 1px solid white;
+}
+.footer-col{
+    flex-basis: 20%;
+}
+.footer-bottom{
+    padding: 30px 20px 30px 0;
+    border-top: 1px solid white;
+    display: inline-block;
+}
