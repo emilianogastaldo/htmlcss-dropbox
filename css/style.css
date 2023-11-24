@@ -103,9 +103,9 @@ a{
 
 /*bottom-header - jumbotron*/
 .bottom-header{
-    height: 800px;
-    margin: 0 auto 100px auto;
-    position: relative;
+    height: 840px;
+    padding-top: 100px;
+    margin-bottom: 160px;
 }
 h1{
     font-size: 5rem;
@@ -125,11 +125,7 @@ h1{
 .jumbo-img{
     flex-basis: 70%;
 }
-.bottom-header > div{
-    position: absolute;
-    left: 0;
-    top: 50px
-}
+
 /*MAIN*/
 /*SEZIONE DELLA BUSINESS PLAN*/
 .business-plan{
