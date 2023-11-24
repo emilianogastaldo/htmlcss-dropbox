@@ -43,10 +43,10 @@ a{
     border: 1px solid blue;    
 }
 .border-gray{
-    border: 1px solid gray;
+    border: 1px solid #DCDCDC
 }
 .border-b-gray{
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #DCDCDC
 }
 .marginb-40{
     margin-bottom: 40px;
@@ -229,19 +229,38 @@ p.border-b-gray{
     color: #0061FF;
     font-size: larger;
 }
+.card-last{
+    display: flex;
+    justify-content: space-between;
+}
+.card-last .info-text{
+    flex-basis: 60%;
+}
+.info-text p{
+    margin-bottom: 40px;
+}
+.info-link{
+    padding-top: 40px;
+
+}
+
+
 /*SEZIONE FOUND PARTNER*/
 .found-partner{
     display: flex;
-    margin: 0 -10px;
+    margin: 0 -40px;
 }
-
 .f-partner-image{
     flex-basis: 60%;
-    padding: 10px;
+    padding: 40px;
+}
+.f-partner-text h3{
+    font-size: 1.6rem;
 }
 .f-partner-text{
     flex-basis: 40%;
-    padding: 10px;
+    padding: 100px 100px 0 30px;
+    line-height: 1.5;
 }
 
 /*SEZIONE BUSINESS OPERATION*/
