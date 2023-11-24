@@ -193,11 +193,11 @@ h2{
 .business-plan .col:last-child{
     flex-basis: 100%;
 }
-.card-title{
+.business-plan .card-title{
     text-align: center;
     padding: 10px 0;
 }
-.card-info{
+.business-plan .card-info{
     padding: 0 60px;
 }
 .card-info h3{
@@ -248,11 +248,11 @@ p.border-b-gray{
 /*SEZIONE FOUND PARTNER*/
 .found-partner{
     display: flex;
-    margin: 0 -40px;
+    margin: 50px -50px;
 }
 .f-partner-image{
     flex-basis: 60%;
-    padding: 40px;
+    padding: 50px;
 }
 .f-partner-text h3{
     font-size: 1.6rem;
@@ -264,12 +264,24 @@ p.border-b-gray{
 }
 
 /*SEZIONE BUSINESS OPERATION*/
+.section-title{
+    padding-top: 100px;
+}
 .business-operation{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -10px;
+    margin: 0 -40px;
 }
-
+.business-operation .col{
+    padding: 40px ;
+}
+.business-operation .card-title{
+    font-size: larger;
+    margin-bottom: 20px;
+}
+.business-operation .card-info{
+    font-size: medium;
+}
 /*SEZIONE LOGHI AZIENDE*/
 .companies-logos{
     display: flex;
