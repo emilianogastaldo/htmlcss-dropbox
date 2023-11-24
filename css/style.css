@@ -70,13 +70,20 @@ a{
 .flex{
     display: flex;
 }
-
+.link-blue{
+    text-decoration: underline;
+    color: blue;
+}
+.dis-innline-block{
+    display: inline-block;
+}
 /*BUTTONS*/
 .btn{
     display: inline-block;
     padding: 10px 25px;
     background-color: var(--lblue) ;
     color: #fff;
+    text-align: center;
 }
 .btn.btn-small{
     padding: 5px 15px;
@@ -86,8 +93,12 @@ a{
     background-color: #fff;
     color: black;
 }
-
-
+.color-gray{
+    color: gray;
+}
+.width100{
+    width: 100%;
+}
 /*HEADER*/
 /*navbar*/
 .navbar{
@@ -144,6 +155,7 @@ h1{
 
 /*MAIN*/
 /*SEZIONE DELLA BUSINESS PLAN*/
+/*Titolo della sezione*/
 h2{
     font-size: 2.7rem;    
 }
@@ -163,32 +175,66 @@ h2{
 .cerchio.cer-gray{
     border: 2px solid gray;
 }
+
+/*creo la row business-plan con le sue col e card*/
 .business-plan{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -10px;
-}
-.section-title{
-    padding: 10px;
+    margin: 0 -30px;
 }
 .col{
-    flex-basis: calc(100% / 3);
-    
-    padding: 10px;    
+    flex-basis: calc(100% / 3);    
+    padding: 30px;    
 }
 .card{
     height: 100%;
+    font-size: 14px;
 }
-
 .business-plan .col:last-child{
     flex-basis: 100%;
 }
-
+.card-title{
+    text-align: center;
+    padding: 10px 0;
+}
+.card-info{
+    padding: 0 60px;
+}
+.card-info h3{
+    margin-top: 25px;
+    margin-bottom: 15px ;
+    font-size: 1.5rem;
+}
+.card-info p{
+    margin-bottom: 15px;
+}
+.card li{
+    padding: 20px 0;
+}
+.card-info .fa-ul{
+    margin: 20px; 
+}
+p.border-b-gray{
+    display: inline-block;
+    padding-bottom: 60px;
+}
+.card-summary{
+    margin-top: 60px;
+    padding: 0 60px;
+}
+.card-summary .fa-ul{
+    margin: 20px;
+}
+.fa-check{
+    color: #0061FF;
+    font-size: larger;
+}
 /*SEZIONE FOUND PARTNER*/
 .found-partner{
     display: flex;
     margin: 0 -10px;
 }
+
 .f-partner-image{
     flex-basis: 60%;
     padding: 10px;
