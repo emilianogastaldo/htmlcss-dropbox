@@ -399,6 +399,12 @@ footer{
     color: #fff;
     border-bottom: 1px solid white;
 }
+footer a{
+    color: #fff;
+}
+.footer-top{
+    padding: 100px 0;
+}
 .footer-col{
     flex-basis: 20%;
 }
@@ -406,4 +412,12 @@ footer{
     padding: 30px 20px 30px 0;
     border-top: 1px solid white;
     display: inline-block;
+}
+.footer-list h4{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.footer-list li{
+    padding: 10px 0;
 }
