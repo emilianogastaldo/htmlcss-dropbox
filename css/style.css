@@ -303,12 +303,54 @@ p.border-b-gray{
     height: 315px;
     background-color: #0061FF; 
 }
-.company-logo-box img{
+.company-logo-box img{    
     padding: 70px;
     height: 100%;
     filter: invert(100%);
 }
 
+#florida{ /*l'immagine da problemi che le altre img non danno */
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.bg-green{
+    background-color: #A2D39B;
+}
+.bg-darkred{
+    background-color: #61082B;
+}
+.bg-blue{
+    background-color: #0093CE;
+}
+.bg-redpop{
+    background-color: #FF1C1C;
+}
+.bg-red{
+    background-color: #D5001F;
+}
+.bg-pink{
+    background-color: #B4D0E7;
+}
+.bg-viola{
+    background-color: #0D2481;
+}
+.bg-yellow{
+    background-color: #FFD830;
+}
+.bg-lightgray{
+    background-color: #F5F5F5;
+}
+.linea{
+    border: 0.5px solid gray;
+    width: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+#central-box{
+    padding: 30px;
+}
 
 /*SEZIONE PROVA GRATUITA*/
 .free-trial>div{
@@ -329,7 +371,6 @@ p.border-b-gray{
 .faq p{
     padding: 20px 0;
     border-bottom: 1px solid gray;
-    
 }
 
 /*FOOTER*/
