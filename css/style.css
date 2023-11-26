@@ -196,12 +196,16 @@ h1{
 
 
 /*MAIN*/
-/*SEZIONE DELLA BUSINESS PLAN*/
-/*Titolo della sezione*/
 h2.section-title{
     font-size: var(--h2-size);    
-    padding: 100px 0;
+    padding: 90px 0;
 }
+/*creo i titoli per le card*/
+h3.card-title{
+    font-size: var(--h3-size);
+}
+/*SEZIONE DELLA BUSINESS PLAN*/
+/*Titolo della sezione*/
 .fatturazione{
     display: inline-block;
     font-size: 14px;
@@ -241,7 +245,7 @@ h2.section-title{
     font-size: 14px;
 }
 
-.business-plan .card-title{
+.business-plan .card-head{
     text-align: center;
     padding: 10px 0;
 }
@@ -251,7 +255,6 @@ h2.section-title{
 .card-info h3{
     margin-top: 25px;
     margin-bottom: 15px ;
-    font-size: var(--h3-size);
 }
 .card-info > p{
     margin-bottom: 15px;
@@ -308,21 +311,22 @@ p.border-b-gray{
 }
 
 /*SEZIONE BUSINESS OPERATION*/
-
+/*Creo la row business-operation*/
 .business-operation{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -40px;
+    margin: -40px
 }
 .business-operation .col{
     padding: 40px ;
 }
-.business-operation .card-title{
-    font-size: larger;
-    margin-bottom: 20px;
+.business-operation h3{
+    font-size: var(--h3-size);
+    padding: 20px 0;
 }
 .business-operation .card-info{
-    font-size: medium;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 
