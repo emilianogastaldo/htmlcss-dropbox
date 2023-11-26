@@ -7,18 +7,21 @@
 
 /*ROOTS*/
 :root{
-    --lblue: #0061FF;
+    --lblue: #0061FF; /*colore dei pulsanti*/
+    --padding-top-body: 80px;
 }
 
 /*GENERICS*/
 body{
     font-family: 'Open Sans', sans-serif;
-    padding-top: 80px;
+    padding-top: var(--padding-top-body);
 }
+
 img{
     max-width:100%;
     display: block;
 }
+
 ul{
     list-style-type: none;
     
@@ -28,20 +31,37 @@ a{
     text-decoration: none;
     color: black;
 }
+
 /*UTILITIES*/
+.width100{
+    width: 100%;
+}
+
 .flex{
     display: flex;
 }
+
+/*creo la classe per decorare i link*/
 .link-blue{
     text-decoration: underline;
     color: blue;
 }
+
 /*classi per far velocemente i bordi*/
 .border-gray{
     border: 1px solid #DCDCDC
 }
 .border-b-gray{
     border-bottom: 1px solid #DCDCDC
+}
+
+/*classe per creare una linea grigia*/
+.linea{
+    border: 0.5px solid gray;
+    width: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
 }
 
 /*classi per dare margini*/
@@ -51,6 +71,10 @@ a{
 .margin-right-40{
     margin-right: 40px;
 }
+.section-margin{
+    margin: 150px 0;
+}
+
 
 /*CONTEINERS*/
 .conteiner-big{
@@ -62,7 +86,10 @@ a{
     margin: 0 auto;
 }
 
-/*COLORI PER I BACKGROUND*/
+/*COLORE TESTO E COLORI PER I BACKGROUND*/
+.color-gray{
+    color: gray;
+}
 .bgc-lblue{
     background-color: #B4D0E7;
 }
@@ -93,10 +120,11 @@ a{
 .bg-lightgray{
     background-color: #F5F5F5;
 }
+
 /*BUTTONS*/
 .btn{
     display: inline-block;
-    padding: 10px 25px;
+    padding: 10px 30px;
     background-color: var(--lblue) ;
     color: #fff;
     text-align: center;
@@ -109,20 +137,16 @@ a{
     background-color: #fff;
     color: black;
 }
-.color-gray{
-    color: gray;
-}
-.width100{
-    width: 100%;
-}
+
 /*HEADER*/
 /*navbar*/
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: var(--padding-top-body);
     padding-left: 20px;
+    padding-right: 5px;
     position: fixed;
     top: 0;
     left: 0;
@@ -199,6 +223,7 @@ h2.section-title{
     flex-wrap: wrap;
     margin: 0 -30px;
 }
+/*queste col e card le utilizzerò anche per la row successiva*/
 .col{
     flex-basis: calc(100% / 3);    
     padding: 30px;    
@@ -207,6 +232,7 @@ h2.section-title{
     height: 100%;
     font-size: 14px;
 }
+
 .business-plan .col:last-child{
     flex-basis: 100%;
 }
@@ -222,7 +248,7 @@ h2.section-title{
     margin-bottom: 15px ;
     font-size: 1.5rem;
 }
-.card-info p{
+.card-info > p{
     margin-bottom: 15px;
 }
 .card li{
@@ -253,19 +279,15 @@ p.border-b-gray{
 .card-last .info-text{
     flex-basis: 60%;
 }
-.info-text p{
-    margin-bottom: 40px;
-}
+
 .info-link{
     padding-top: 40px;
-
 }
 
 
 /*SEZIONE FOUND PARTNER*/
 .found-partner{
     display: flex;
-    margin: 0 -50px;
 }
 .f-partner-image{
     flex-basis: 60%;
@@ -275,7 +297,7 @@ p.border-b-gray{
 }
 .f-partner-text{
     flex-basis: 40%;
-    padding: 100px 50px 0 50px;
+    padding: 50px;
     line-height: 1.5;
 }
 
@@ -296,9 +318,7 @@ p.border-b-gray{
 .business-operation .card-info{
     font-size: medium;
 }
-.section-margin{
-    margin: 150px 0;
-}
+
 
 /*SEZIONE LOGHI AZIENDE*/
 .companies-logos{
@@ -318,18 +338,9 @@ p.border-b-gray{
     height: 100%;
     filter: invert(100%);
 }
-
 #florida{ /*l'immagine da problemi che le altre img non danno */
-    padding-top: 140px;
-    padding-bottom: 140px;
-}
-
-.linea{
-    border: 0.5px solid gray;
-    width: 150px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-
+    padding-top: 160px;
+    padding-bottom: 160px;
 }
 #central-box{
     padding: 30px;
