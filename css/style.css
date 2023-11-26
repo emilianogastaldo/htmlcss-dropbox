@@ -29,31 +29,29 @@ a{
     color: black;
 }
 /*UTILITIES*/
-/*BORDERS*/
-.border-green{
-    border: 2px dotted green;
+.flex{
+    display: flex;
 }
-.border-red{
-    border: 1px dashed red;
+.link-blue{
+    text-decoration: underline;
+    color: blue;
 }
-.border{
-    border: 1px solid black;
-}
-.border-blue{
-    border: 1px solid blue;    
-}
+/*classi per far velocemente i bordi*/
 .border-gray{
     border: 1px solid #DCDCDC
 }
 .border-b-gray{
     border-bottom: 1px solid #DCDCDC
 }
+
+/*classi per dare margini*/
 .marginb-40{
     margin-bottom: 40px;
 }
 .margin-right-40{
     margin-right: 40px;
 }
+
 /*CONTEINERS*/
 .conteiner-big{
     max-width: 1400px;
@@ -64,18 +62,36 @@ a{
     margin: 0 auto;
 }
 
+/*COLORI PER I BACKGROUND*/
 .bgc-lblue{
     background-color: #B4D0E7;
 }
-.flex{
-    display: flex;
+.bg-green{
+    background-color: #A2D39B;
 }
-.link-blue{
-    text-decoration: underline;
-    color: blue;
+.bg-darkred{
+    background-color: #61082B;
 }
-.dis-innline-block{
-    display: inline-block;
+.bg-blue{
+    background-color: #0093CE;
+}
+.bg-redpop{
+    background-color: #FF1C1C;
+}
+.bg-red{
+    background-color: #D5001F;
+}
+.bg-pink{
+    background-color: #B4D0E7;
+}
+.bg-viola{
+    background-color: #0D2481;
+}
+.bg-yellow{
+    background-color: #FFD830;
+}
+.bg-lightgray{
+    background-color: #F5F5F5;
 }
 /*BUTTONS*/
 .btn{
@@ -156,8 +172,9 @@ h1{
 /*MAIN*/
 /*SEZIONE DELLA BUSINESS PLAN*/
 /*Titolo della sezione*/
-h2{
+h2.section-title{
     font-size: 2.7rem;    
+    padding: 100px 0;
 }
 .fatturazione{
     display: inline-block;
@@ -248,25 +265,22 @@ p.border-b-gray{
 /*SEZIONE FOUND PARTNER*/
 .found-partner{
     display: flex;
-    margin: 50px -50px;
+    margin: 0 -50px;
 }
 .f-partner-image{
     flex-basis: 60%;
-    padding: 50px;
 }
 .f-partner-text h3{
     font-size: 1.6rem;
 }
 .f-partner-text{
     flex-basis: 40%;
-    padding: 100px 100px 0 30px;
+    padding: 100px 50px 0 50px;
     line-height: 1.5;
 }
 
 /*SEZIONE BUSINESS OPERATION*/
-.section-title{
-    padding-top: 100px;
-}
+
 .business-operation{
     display: flex;
     flex-wrap: wrap;
@@ -282,11 +296,8 @@ p.border-b-gray{
 .business-operation .card-info{
     font-size: medium;
 }
-.section-end{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+.section-margin{
+    margin: 150px 0;
 }
 
 /*SEZIONE LOGHI AZIENDE*/
@@ -300,8 +311,7 @@ p.border-b-gray{
 }
 .company-logo-box{
     flex-basis: 50%;
-    height: 315px;
-    background-color: #0061FF; 
+    height: calc(100vw / 6);
 }
 .company-logo-box img{    
     padding: 70px;
@@ -314,33 +324,6 @@ p.border-b-gray{
     padding-bottom: 140px;
 }
 
-.bg-green{
-    background-color: #A2D39B;
-}
-.bg-darkred{
-    background-color: #61082B;
-}
-.bg-blue{
-    background-color: #0093CE;
-}
-.bg-redpop{
-    background-color: #FF1C1C;
-}
-.bg-red{
-    background-color: #D5001F;
-}
-.bg-pink{
-    background-color: #B4D0E7;
-}
-.bg-viola{
-    background-color: #0D2481;
-}
-.bg-yellow{
-    background-color: #FFD830;
-}
-.bg-lightgray{
-    background-color: #F5F5F5;
-}
 .linea{
     border: 0.5px solid gray;
     width: 150px;
@@ -354,13 +337,14 @@ p.border-b-gray{
 
 /*SEZIONE PROVA GRATUITA*/
 .free-trial{
-    padding: 150px;
+    padding: 80px;
 }
 .free-trial>div{
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
-.free-trial-title{
+.free-trial-title{    
     flex-basis: 60%;
 }
 .btn.btn-no-border{
@@ -376,22 +360,40 @@ p.border-b-gray{
     padding: 150px 0;
 }
 .faq h2{
-    padding: 30px 0;
     border-bottom: 1px solid gray;
 }
-.faq p{
-    padding: 40px 0;
+.question{
     border-bottom: 1px solid gray;
+}
+.faq h6{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 40px 0;
     position: relative;
 }
 .faq span{
     position: absolute;
-    right: 0;
+    right: 50px;
     top: 50%;
     translate: 0 -50%;
 }
-
-
+/*Inserisco l'icon come pseudo elemento così da cambiarlo*/
+.faq-icon::before{
+    font: var(--fa-font-solid);
+    content: "\f078"
+}
+.faq p{
+    display: none;
+    padding-bottom: 40px;
+}
+/*Creo l'interazione delle domande*/
+.faq h6:hover + p{
+    display: block;
+}
+h6:hover > .faq-icon::before{
+    font: var(--fa-font-solid);
+    content: "\f077"
+}
 
 /*FOOTER*/
 footer{
