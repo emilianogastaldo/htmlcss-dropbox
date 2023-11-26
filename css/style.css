@@ -9,6 +9,8 @@
 :root{
     --lblue: #0061FF; /*colore dei pulsanti*/
     --padding-top-body: 80px;
+    --h2-size: 2.7rem;
+    --h3-size: 1.5rem;
 }
 
 /*GENERICS*/
@@ -197,7 +199,7 @@ h1{
 /*SEZIONE DELLA BUSINESS PLAN*/
 /*Titolo della sezione*/
 h2.section-title{
-    font-size: 2.7rem;    
+    font-size: var(--h2-size);    
     padding: 100px 0;
 }
 .fatturazione{
@@ -230,12 +232,15 @@ h2.section-title{
 }
 .card{
     height: 100%;
-    font-size: 14px;
 }
 
 .business-plan .col:last-child{
     flex-basis: 100%;
 }
+.business-plan .card{
+    font-size: 14px;
+}
+
 .business-plan .card-title{
     text-align: center;
     padding: 10px 0;
@@ -246,7 +251,7 @@ h2.section-title{
 .card-info h3{
     margin-top: 25px;
     margin-bottom: 15px ;
-    font-size: 1.5rem;
+    font-size: var(--h3-size);
 }
 .card-info > p{
     margin-bottom: 15px;
@@ -272,6 +277,8 @@ p.border-b-gray{
     color: #0061FF;
     font-size: larger;
 }
+
+/*completo l'ultima card*/
 .card-last{
     display: flex;
     justify-content: space-between;
@@ -279,7 +286,6 @@ p.border-b-gray{
 .card-last .info-text{
     flex-basis: 60%;
 }
-
 .info-link{
     padding-top: 40px;
 }
@@ -293,7 +299,7 @@ p.border-b-gray{
     flex-basis: 60%;
 }
 .f-partner-text h3{
-    font-size: 1.6rem;
+    font-size: var(--h3-size);
 }
 .f-partner-text{
     flex-basis: 40%;
