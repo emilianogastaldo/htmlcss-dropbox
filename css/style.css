@@ -9,6 +9,7 @@
 :root{
     --lblue: #0061FF; /*colore dei pulsanti*/
     --padding-top-body: 80px;
+    --padding-bottom-h2: 50px;
     --h2-size: 2.7rem;
     --h3-size: 1.5rem;
 }
@@ -69,9 +70,6 @@ a{
 /*classi per dare margini*/
 .marginb-40{
     margin-bottom: 40px;
-}
-.margin-right-40{
-    margin-right: 40px;
 }
 .section-margin{
     margin: 150px 0;
@@ -139,6 +137,12 @@ a{
     background-color: #fff;
     color: black;
 }
+.btn.btn-no-border{
+    background-color: #fff;
+    color: black;
+    border: 1px solid transparent;
+}
+
 
 /*HEADER*/
 /*navbar*/
@@ -172,6 +176,21 @@ a{
     /*border-top: 3px solid var(--lblue);*/
     border-bottom: 3px solid var(--lblue);
     text-shadow: 0px 5px 3px var(--lblue);
+}
+
+/*creo un  menu dropdown */
+.navbar ul li ul{
+    background-color: cyan;
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+.navbar ul li ul li>a{
+    display: block;
+    padding: 30px 0;
+}
+.navbar ul li:hover ul{
+    display: block;
 }
 
 /*bottom-header - jumbotron*/
@@ -210,7 +229,7 @@ h1{
 /*creo i titoli per le sezioni*/
 h2.section-title{
     font-size: var(--h2-size);    
-    padding: 90px 0;
+    padding-bottom: var(--padding-bottom-h2);
 }
 /*creo i titoli per le card*/
 h3.card-title{
@@ -224,6 +243,8 @@ h3.card-title{
     line-height: 1rem;
     height: 1rem;
     font-size: 14px;
+    margin-bottom: 40px;
+    margin-right: 40px;
 }
 .cerchio{
     display: inline-block;
@@ -366,43 +387,30 @@ p.border-b-gray{
     filter: invert(100%);
     width: 50%;
 }
-
-/*l'immagine da problemi che le altre img non danno*/
-/*#florida{ 
-    padding-top: 140px;
-    padding-bottom: 140px;
-}*/
 #central-box{
     padding: 30px;
 }
 .company-logo-box:hover{
-    /*box-shadow: 0 0 40px black;*/
     border: 20px solid rgba(255, 255, 255, 0.5);
 }
+
+
 /*SEZIONE PROVA GRATUITA*/
 .free-trial{
-    padding: 80px;
+    padding-top: 150px;
+    padding-bottom: calc(150px - var(--padding-bottom-h2));
 }
 .free-trial>div{
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     height: 100%;
 }
 .free-trial-title{    
     flex-basis: 60%;
 }
-.btn.btn-no-border{
-    background-color: #fff;
-    color: black;
-    border: 1px solid transparent;
-}
-
 
 
 /*SEZIONE F.A.Q.*/
-.faq{
-    padding: 150px 0;
-}
 .faq h2{
     border-bottom: 1px solid gray;
 }
@@ -467,3 +475,4 @@ footer a{
 .footer-list li{
     padding: 10px 0;
 }
+
