@@ -345,29 +345,42 @@ p.border-b-gray{
     display: flex;
 }
 .big-box{
-    flex-basis: calc(100% / 3);
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
     display: flex;
     flex-wrap: wrap;
 }
 .company-logo-box{
     border: 20px solid transparent;
-    flex-basis: 50%;
-    height: calc(100vw / 6);
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.company-logo-box img{    
-    padding: 70px;
+.company-logo-box a{
     height: 100%;
-    filter: invert(100%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#florida{ /*l'immagine da problemi che le altre img non danno*/
+.company-logo-box img{
+    filter: invert(100%);
+    width: 50%;
+}
+
+/*l'immagine da problemi che le altre img non danno*/
+/*#florida{ 
     padding-top: 140px;
     padding-bottom: 140px;
-}
+}*/
 #central-box{
     padding: 30px;
 }
-.company-logo-box img:hover{
-    box-shadow: 0 0 40px black;
+.company-logo-box:hover{
+    /*box-shadow: 0 0 40px black;*/
+    border: 20px solid rgba(255, 255, 255, 0.5);
 }
 /*SEZIONE PROVA GRATUITA*/
 .free-trial{
