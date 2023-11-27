@@ -221,7 +221,6 @@ h3.card-title{
 /*creo la fatturazione*/
 .fatturazione{
     display: inline-block;
-    text-align: bade;
     line-height: 1rem;
     height: 1rem;
     font-size: 14px;
@@ -351,6 +350,7 @@ p.border-b-gray{
     flex-wrap: wrap;
 }
 .company-logo-box{
+    border: 20px solid transparent;
     flex-basis: 50%;
     height: calc(100vw / 6);
 }
@@ -359,14 +359,16 @@ p.border-b-gray{
     height: 100%;
     filter: invert(100%);
 }
-#florida{ /*l'immagine da problemi che le altre img non danno */
-    padding-top: 160px;
-    padding-bottom: 160px;
+#florida{ /*l'immagine da problemi che le altre img non danno*/
+    padding-top: 140px;
+    padding-bottom: 140px;
 }
 #central-box{
     padding: 30px;
 }
-
+.company-logo-box img:hover{
+    box-shadow: 0 0 40px black;
+}
 /*SEZIONE PROVA GRATUITA*/
 .free-trial{
     padding: 80px;
