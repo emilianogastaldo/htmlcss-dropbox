@@ -456,10 +456,13 @@ footer{
 footer a{
     color: #fff;
 }
+footer a:hover{
+    text-decoration: underline;
+}
 .footer-top{
     padding: 100px 0;
 }
-.footer-col{
+.footer col{
     flex-basis: 20%;
 }
 .footer-bottom{
@@ -475,4 +478,3 @@ footer a{
 .footer-list li{
     padding: 10px 0;
 }
-
