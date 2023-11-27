@@ -341,9 +341,6 @@ p.border-b-gray{
 
 
 /*SEZIONE LOGHI AZIENDE*/
-.companies-logos{
-    display: flex;
-}
 .big-box{
     width: calc(100vw / 3);
     height: calc(100vw / 3);
