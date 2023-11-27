@@ -181,6 +181,7 @@ a{
 /*creo un  menu dropdown */
 .navbar ul li ul{
     background-color: cyan;
+    text-align: center;
     display: none;
     position: absolute;
     top: 100%;
